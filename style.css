@@ -1,0 +1,46 @@
+body {
+	font: 13px helvetica,arial,freesans,clean,sans-serif;
+    line-height: 1.4em;
+    background-color: #fff;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+ul {
+	display: block;
+}
+
+.octodex {
+	list-style: none;
+	display: flex;
+}
+
+.octocat {
+	margin: 0 9px 0;
+}
+
+a {
+	color: #333;
+	border-radius: 3px;
+	display: block;
+	border: solid #cacaca;
+	background: #fff;
+	text-align: center;
+	/*overflow: hidden;*/
+	border-width: 1px;
+	line-height: 0px;
+}
+
+a img {
+	border: none;
+}
+
+ul.octodex li.octocat a img {
+	margin: 10px;
+    width: 424px;
+    height: 424px;
+    max-width: 424px;
+    max-height: 424px;
+}
