@@ -1,18 +1,6 @@
-body {
-	font: 13px helvetica,arial,freesans,clean,sans-serif;
-    line-height: 1.4em;
-    background-color: #fff;
-    color: #333333;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-}
-
-ul {
-	list-style: none;
-	display: block;
-}
-
+/*------------------------------------------------------------------------------
+	Base Styles
+------------------------------------------------------------------------------*/
 a {
 	color: #333;
 	border-radius: 3px;
@@ -26,48 +14,97 @@ a {
 	text-decoration: none;
 }
 
-.octodex {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: flex-start;
-}
-
-.octocat {
-	margin: 0 9px 0;
-}
-
-a img {
-	border: none;
-}
-
-/* octocat image */
-ul.octodex li.octocat a img {
+li {
 	list-style: none;
+}
+/* end */
+
+/*------------------------------------------------------------------------------
+	Octocat
+------------------------------------------------------------------------------*/
+ul.octodex {
+	font: 13px helvetica,arial,freesans,clean,sans-serif;
+    line-height: 1.4em;
+    background-color: #fff;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+ul.octodex li.octocat {
+	margin: 0 9px 0;
+	flex-direction: row;
+}
+
+ul.octodex li.octocat a img {
 	margin: 10px;
     width: 424px;
     height: 424px;
     max-width: 424px;
     max-height: 424px;
-}	
+}
+/* end */
 
-/* image footer */
+/*------------------------------------------------------------------------------
+	Footer
+------------------------------------------------------------------------------*/
+div.image-footer {
+	font: 16px helvetica,arial,freesans,clean,sans-serif;
+	font-weight: bold;
+	width: 424px;
+	display: inline-flex;
+	justify-content: center;
+	justify-content: space-between;
+	max-width: 424px;
+	align-items: center;
+}
+
+span.image-number {
+	align-self: flex-start;
+	color: #cacaca;
+	font-weight: bold;
+}
+
+ul.octodex li.octocat div.image-footer div.image-caption {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+ul.octodex li.octocat div.image-footer div.image-caption span {
+	color: #777;
+}
+
+ul.octodex li.octocat div.image-footer div.image-caption a {
+	font: 16px helvetica,arial,freesans,clean,sans-serif;
+	line-height: 1.4em;
+	font-weight: bold;
+	border: none: ;
+}
+
+ul.octodex li.octocat div.image-footer div.image-caption a::before {
+	content: "";
+	margin: 2px;
+}
+
+ul.octodex li.octocat div.image-footer div.image-caption a::after {
+	content: "";
+	margin: 2px;
+}
+
 ul.octodex li.octocat div.image-footer div.image-caption ul.authors li a {
-	border: none;
+	display: flex;
+	flex-direction: row;
 }
 
 ul.octodex li.octocat div.image-footer div.image-caption ul.authors li a img {
 	width: 28px;
 	height: 28px;
-
+	margin: 0;
+	justify-content: flex-end;
 }
+/* end */
 
-div.image-footer {
-	justify-content: space-evenly;
-	align-self: flex-end;
-	position: absolute;
-}
-
-.image-number {
-	align-self: flex-start;
-}
